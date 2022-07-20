@@ -1,0 +1,1076 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 62.5%;
+}
+
+                        /*  ----------- Elementos generales -----------------*/ 
+
+.titlesGeneral {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #F3E8D4;
+    font-size: 5em;
+    font-family: 'inter', serif;
+    text-align: center;
+    font-weight: 100;
+    position: relative;
+    margin-bottom: 6rem;
+    margin-top: 15rem;    
+}
+
+.linesGeneral {
+    height: 1px;
+    width: 135px;
+    background-color: #f3e8d488;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 8rem;
+    position: relative;
+    animation: lineaGral 3s ease;
+}
+
+.menuGral {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.menuGral {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    position: absolute;
+    top: 4.5rem; 
+    right: 3rem; 
+    z-index: 999999;
+    cursor: pointer;
+}
+
+
+@keyframes lineaGral {
+    0% {
+        width: 1px;
+    }
+    100% {
+        width: 135px;
+    }
+}
+
+/* ------------------------------- Fin elementos generales --------------------------*/
+
+/*-------------------------------- HOME Mobile First --------------------------------*/
+
+.home__image--background {
+    background-image: url(./img/banner-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.menuHome {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.menuHome {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        position: absolute;
+        top: 4.5rem; 
+        right: 4rem; 
+        z-index: 999999;
+        cursor: pointer;  
+}
+
+.nav li {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    font-family: 'inter', serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    background-color: #363636;
+    color: #F3E8D4;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.nav a:visited {
+    color: #F3E8D4;
+    text-decoration: none;
+    }
+
+.nav a:hover {
+    font-weight: 300;
+}
+
+.nav a:link {
+    color: #F3E8D4;
+    text-decoration: none;
+}
+
+.home__title {
+    color: #F3E8D4;
+    font-size: 5em;
+    font-family: 'inter', serif;
+    position: absolute;
+    bottom: 15rem;
+    left: 5rem;
+}
+
+.home__title--background {
+    background-color: #363636;
+    display: table;
+    padding: 0.02rem;
+}  
+
+.homeRedes ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    bottom: 11rem;
+    margin-left: 5rem;
+    gap: 2px;
+}
+
+
+/* ------------------------------- Fin HOME Mobile First  ---------------------------------*/
+
+/* ------------------------------- HOME Responsive Tablet  -------------------------------*/
+
+@media screen and (min-width:571px) and (max-width: 974px) {
+    .menuHome {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2rem;
+    }
+    
+    .menuHome {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        position: absolute;
+        top: 4.5rem; 
+        right: 8rem; 
+        z-index: 999999;
+        cursor: pointer;
+    }
+
+    
+.nav li {
+    font-family: 'inter', serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-transform: uppercase;
+    background-color: #363636;
+    color: #F3E8D4;
+    text-decoration: none;
+    padding: 0.1rem;
+}
+
+.nav a:visited {
+    color: #F3E8D4;
+    text-decoration: none;
+    }
+
+.nav a:hover {
+    font-weight: 300;
+}
+
+.nav a:link {
+    color: #F3E8D4;
+    text-decoration: none;
+}
+
+.home__title {
+    color: #F3E8D4;
+    font-size: 7em;
+    font-family: 'inter', serif;
+    position: absolute;
+    bottom: 20rem;
+    left: 10rem;
+}
+
+.home__title--background {
+    background-color: #363636;
+    display: table;
+    padding: 0.02rem;
+}  
+
+.homeRedes ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 16rem;
+    left: 5rem;
+    gap: 3px;
+}
+    
+}
+
+/* ------------------------------- FIN Home responsibe TABLET -----------------------------*/
+
+/* ------------------------------- HOME Responsive Desktop  -------------------------------*/
+
+@media screen and (min-width:975px) and (max-width: 1800px) {
+
+    .menuHome {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2rem;
+    }
+    
+    .menuHome {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        position: absolute;
+        top: 4.5rem; 
+        right: 10rem; 
+        z-index: 999999;
+        cursor: pointer;
+    }
+
+    
+.nav li {
+    font-family: 'inter', serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    background-color: #363636;
+    color: #F3E8D4;
+    text-decoration: none;
+    padding: 0.1rem;
+}
+
+.nav a:visited {
+    color: #F3E8D4;
+    text-decoration: none;
+    }
+
+.nav a:hover {
+    font-weight: 300;
+}
+
+.nav a:link {
+    color: #F3E8D4;
+    text-decoration: none;
+}
+
+.home__title {
+    color: #F3E8D4;
+    font-size: 8em;
+    font-family: 'inter', serif;
+    position: absolute;
+    bottom: 18rem;
+    left: 30rem;
+}
+
+.home__title--background {
+    background-color: #363636;
+    display: table;
+    padding: 0.02rem;
+}  
+
+.homeRedes ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 14rem;
+    left: 25rem;
+    gap: 5px;
+}  
+}
+
+/*-------------------------------- Fin HOME responsive DESKTOP -----------------------*/
+
+                                    /*          Fin Home       /*
+
+/*-------------------------------- Escuchanos Mobile First ---------------------------*/
+
+.menuEscuchanos {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.menuEscuchanos {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        position: absolute;
+        top: 4.5rem; 
+        right: 4rem; 
+        z-index: 999999;
+        cursor: pointer;  
+}
+
+.navEscuchanos li {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    font-family: 'inter', serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    background-color: #363636;
+    color: #F3E8D4;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.navEscuchanos a:visited {
+    color: #F3E8D4;
+    text-decoration: none;
+    }
+
+.navEscuchanos a:hover {
+    font-weight: 300;
+}
+
+.navEscuchanos a:link {
+    color: #F3E8D4;
+    text-decoration: none;
+}
+
+
+.titleSpotify {
+    color: #F3E8D4;
+    font-size: 5em;
+    font-family: 'inter', serif;
+    align-items: center;
+    font-weight: 100;
+    margin-top: 12rem;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.titleYoutube {
+    color: #F3E8D4;
+    font-size: 5em;
+    font-family: 'inter', serif;
+    align-items: center;
+    font-weight: 100;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    position: relative;
+} 
+
+.linesEscuchanos {
+    height: 1px;
+    width: 110px;
+    background-color: #f3e8d488;
+    display: block;
+    margin-bottom: 7rem;
+    position: relative;
+    animation: linea 3s ease;
+}
+
+@keyframes linea {
+    0% {
+        width: 1px;
+    }
+    100% {
+        width: 110px;
+    }
+}
+
+.escuchanos__description {
+    color: #F3E8D4;
+    font-size: 2.3em;
+    font-family: 'inter', serif;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 4rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.iframes {
+    height: 260px;
+    width: 345px;
+    bottom: 15vh;
+    margin-bottom: 9rem;
+    border-radius: 12px;
+}
+
+.contenedorGeneral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorIzq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(12,13,23,1) 0%, rgba(24,25,47,1) 63%, rgba(78,46,37,1) 100%);
+}
+
+.contenedorDer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(12,13,23,1) 0%, rgba(24,25,47,1) 63%, rgba(78,46,37,1) 100%);
+    height: 100%;
+    }
+
+.footerEscuchanos ul { 
+    position: relative;
+    bottom: 0px;
+    display: inline-flex;  
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: 60px;   
+    background-color: #3d3c3c84;
+    gap: 18px;
+}
+
+/*--------------------------------  Fin ESCUCHANOS Mobile First ------------------------    */
+
+/*    ---------------------------  ESCUCHANOS Responsive TABLET-------------------    */
+
+@media screen and (min-width:617px) and (max-width: 1280px) {
+
+    .contenedorGeneral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titleSpotify {
+        color: #F3E8D4;
+        font-size: 5em;
+        font-family: 'inter', serif;
+        align-items: center;
+        font-weight: 100;
+        margin-top: 12rem;
+        margin-bottom: 5rem;
+        position: relative;
+    }
+
+    .titleYoutube {
+        color: #F3E8D4;
+        font-size: 5em;
+        font-family: 'inter', serif;
+        align-items: center;
+        font-weight: 100;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+        position: relative;
+    }
+        
+    .escuchanos__description {
+        color: #F3E8D4;
+        font-size: 2.8em;
+        font-family: 'inter', serif;
+        text-align: center;
+        font-weight: 100;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    
+    .iframes {
+        height: 380px;
+        width: 700px;
+        border-radius: 12px;
+        }
+}
+
+/*-----------------------------------   Fin ESCUCHANOS responsive tablet  ----------------------------------*/
+
+/*-------------------------------------ESCUCHANOS responsive DESKTOP ----------------------------------------*/
+
+@media screen and (min-width:1281px) and (max-width: 1900px) {
+    
+    .menuEscuchanos {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2rem;
+    }
+
+    .menuEscuchanos {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        position: absolute;
+        top: 4.5rem; 
+        right: 8rem; 
+        z-index: 999999;
+        cursor: pointer;
+    }
+    
+    .navEscuchanos li {
+        display: flex;
+        font-family: 'inter', serif;
+        font-weight: 600;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        background-color: #363636;
+        color: #F3E8D4;
+        text-decoration: none;
+        padding: 0.1rem;
+    }
+    
+    .navEscuchanos a:visited {
+        color: #F3E8D4;
+        text-decoration: none;
+        }
+    
+    .navEscuchanos a:hover {
+        font-weight: 300;
+    }
+    
+    .navEscuchanos a:link {
+        color: #F3E8D4;
+        text-decoration: none;
+    }
+    
+    .contenedorGeneral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+.contenedorIzq {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: absolute;
+    left: 0%;
+}
+
+.contenedorDer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; 
+    position: absolute;
+    right: 0%;
+    background: linear-gradient(0deg, rgba(12,13,23,1) 0%, rgba(24,25,47,1) 63%, rgba(78,46,37,1) 100%);
+    }
+
+.titleSpotify {
+    color: #F3E8D4;
+    font-size: 4.5em;
+    font-family: 'inter', serif;
+    align-items: center;
+    font-weight: 100;
+    margin-top: 12rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.titleYoutube {
+    color: #F3E8D4;
+    font-size: 4.5em;
+    font-family: 'inter', serif;
+    align-items: center;
+    font-weight: 100;
+    margin-top: 12rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.linesEscuchanos {
+    height: 1px;
+    width: 115px;
+    background-color: #f3e8d488;
+    display: block;
+    margin-bottom: 7rem;
+    position: relative;
+}
+
+.escuchanos__description {
+    color: #F3E8D4;
+    font-size: 2.6em;
+    width: 600px;
+    font-family: 'inter', serif;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 8rem;
+}
+
+.iframes {
+    height: 800px;
+    width: 600px;
+    border-radius: 12px;
+    }
+
+.footerEscuchanos ul { 
+    position: absolute;
+    bottom: 0px;
+    display: inline-flex;  
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: 60px;   
+    background-color: #3d3c3c84;
+    gap: 18px;
+    }
+
+    .linesEscuchanos {
+    height: 1px;
+    width: 100px;
+    background-color: #f3e8d488;
+    display: block;
+    margin-bottom: 7rem;
+    position: relative;
+    animation: linea 3s ease;
+}
+
+@keyframes linea {
+    0% {
+        width: 1px;
+    }
+    100% {
+        width: 100px;
+    }
+}    
+}
+
+                    /*    ---------------------------  FIN ESCUCHANOS Responsive DESKTOP-------------------    */
+
+                                                /*          Fin escuchanos         */
+
+                /*    --------------------------    SOBRE NOSOTRXS Desktop    -------------------    */
+
+.gradient__background {
+    background: linear-gradient(180deg, rgba(12,13,23,1) 0%, rgba(24,25,47,1) 63%, rgba(78,46,37,1) 100%);
+    background-attachment: fixed;
+    }
+
+    
+    .mainAbout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutText {
+        width: 100%;
+        position: relative;
+    }
+
+    .divParrafo {
+        width: 800px;
+    }
+
+    .aboutText__parrafo {
+        color: #F3E8D4;
+        font-size: 1.9rem;
+        font-family: 'inter', serif;
+        font-weight: 100;
+        margin-bottom: 3rem;
+        text-align: center;
+        width: auto;
+    }
+
+    #aboutText--italic--bold {
+        color: #F3E8D4;
+        font-size: 1.1em;
+        font-family: 'inter', serif;
+        font-weight: bold;
+        font-style: italic;
+    
+    }
+    
+    .aboutMembersTitles {
+        color: #F3E8D4;
+        font-size: 15px;
+        font-family: 'inter', serif;
+        font-weight: bold;
+    }
+    
+    .aboutCards {
+        display: grid;
+        grid-template-areas: 
+        " foto1 foto2 foto3";
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: auto;
+        max-width: 820px;
+        margin-top: 90px;
+        margin-bottom: 100px;
+        gap: 4px;
+    }
+    
+    .aboutBox1__img {
+        grid-area: foto1;
+        max-width: 270px;
+    }
+    
+    .aboutBox2__img {
+        grid-area: foto2;
+        max-width: 270px;
+    }
+    
+    .aboutBox3__img {
+        grid-area: foto3;
+        max-width: 270px;
+    }
+
+    /*      ---------------------------  Fin SOBRE NOSOTRXS Desktop -----------------*/
+    
+    /*      -----------------------   SOBRE NOSOTRXS Responsive MOBILE --------------*/
+
+    @media screen and (min-width:100px) and (max-width:480px) {
+        .aboutCards {
+            display: grid;
+            grid-template-areas: 
+            " foto1" 
+            " foto2" 
+            " foto3";
+            grid-template-columns: auto;
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+        }
+        
+        .aboutBox1__img {
+            grid-area: foto1;
+            max-width: auto;
+        }
+        
+        .aboutBox2__img {
+            grid-area: foto2;
+            max-width: auto;
+        }
+        
+        .aboutBox3__img {
+            grid-area: foto3;
+            max-width: auto;
+        }
+
+        .divParrafo {
+            width: auto;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        
+        .aboutText__parrafo { 
+        color: #F3E8D4;
+        font-size: 1.5rem;
+        font-family: 'inter', serif;
+        font-weight: 100;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+}
+    /* ------------------------------ Fin SOBRE NOSOTROS Responsive MOBILE ------------------*/
+
+    /* ------------------------------  SOBRE NOSOTROS Responsive TABLET ------------------*/
+
+    @media screen and (min-width: 450px) and (max-width:760px) {
+        .aboutCards {
+            display: grid;
+            grid-template-areas: 
+            " foto1" 
+            " foto2" 
+            " foto3";
+            grid-template-columns: auto;
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+        }
+        
+        .aboutBox1__img {
+            grid-area: foto1;
+            max-width: auto;
+        }
+        
+        .aboutBox2__img {
+            grid-area: foto2;
+            max-width: auto;
+        }
+        
+        .aboutBox3__img {
+            grid-area: foto3;
+            max-width: auto;
+        }
+
+        .divParrafo {
+            width: auto;
+            margin-left: 3rem;
+            margin-right: 3rem;
+        }
+        
+        .aboutText__parrafo { 
+        color: #F3E8D4;
+        font-size: 1.9rem;
+        font-family: 'inter', serif;
+        font-weight: 100;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    }
+
+    /* ---------------------------     Fin SOBRE NOSOTRXS Responsive TABLET  ------------------*/
+
+                                    /*      Fin seccion SOBRE NOSOTRXS     */
+
+    /* -----------------------------      ENTRADAS Mobile First       --------------------------*/
+
+    .entradas__background {
+        background-image: url(./img/banner-home.jpg);   
+        background-size: cover;
+        background-color: rgba(48, 48, 48, 0.671);
+        background-blend-mode: soft-light;  
+        background-repeat: no-repeat;
+        background-position: right;
+        background-attachment: fixed;
+    }
+    
+    .main__height {
+        height: 68vh;
+    }   
+    
+    .section_tablaEntradas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+        position: relative;
+    }
+
+    th, td {
+        width: 220px;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+    
+    .entradasTabla {
+        margin-left: 8rem;
+    }
+    
+    .entradasTabla__font {
+        font-family: 'inter', serif;
+        font-weight: 200;
+        font-size: 2.4em;
+        color: #F3E8D4;
+    }
+    
+    .entradasTabla__date {
+        width: 180px;
+    }
+    
+    .entradasTabla__button {
+    width: 87px;
+    padding: 3px;
+    font-family: 'inter', serif;
+    color: #F3E8D4;
+    font-weight: 200;
+    height: 24px;
+    font-size: 0.7em;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 1px solid #fdf6ec92;
+    }
+
+    .footerEntradas ul {
+        position: relative;
+        display: flex;  
+        justify-content: center;
+        align-items: center; 
+        list-style: none;
+        width: 100%;
+        height: 60px;   
+        background-color: #3d3c3c84;
+        gap: 18px;
+    }
+
+    /* -------------------------------- Fin ENTRADAS Mobile First  --------------------*/
+
+    /* ------------------------------- ENTRADAS Responsive TABLET  -------------------*/
+    
+    @media screen and (min-width:571px) and (max-width: 974px) {
+        .entradasTabla__font {
+            font-size: 3em;
+        }
+
+        .entradasTabla__button {
+            width: 90px;
+            padding: 4px;
+            height: 26px;
+            font-size: 0.7em; 
+    }   
+    
+        .main__height {
+            height: 75vh;
+        }   
+}
+
+        /*------------------------------ Fin ENTRADAS Responsive TABLET ---------------------*/
+
+        /* ------------------------------- ENTRADAS Responsive DESKTOP  -------------------*/
+
+    @media screen and (min-width:975px) and (max-width: 1800px) {
+
+        .section_tablaEntradas {
+            margin-left: 0;
+        }
+
+        .entradasTabla__font {
+            font-size: 3em;
+        }
+
+        .entradasTabla__button {
+            width: 90px;
+            padding: 4px;
+            height: 26px;
+            font-size: 0.7em;
+            }
+
+        .entradasTabla__date {
+            width: 170px;
+        }
+
+        .entradasTabla__lugar {
+            width: 205px;
+        }
+
+        th, td {
+            width: 170px;
+            text-align: left;
+            padding-bottom: 20px;
+        }
+    
+        .main__height {
+            height: 72.3vh;
+            }    
+    }
+
+    /* ---------------------------------  Fin ENTRADAS Responsive Desktop ---------------------------*/
+
+                                        /*  Fin seccion ENTRADAS  */
+    
+    /*  -------------------------------- CONTACTO Mobile First   ------------------------------------*/
+
+    .contenedorForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        margin: auto;
+        margin-bottom: 5rem;
+        height: 48vh;
+    }
+    
+    .formCampos {
+        display: block;
+        width: 300px;
+        height: 23px;
+        background-color: transparent;
+        border: 1px solid #fdf6ec92;
+        border-radius: 14px;
+        padding: 5px;
+        font-family: 'inter', serif;
+        font-size: 1.5em;
+        font-weight: 300;
+        color: #F3E8D4;
+    }
+    
+    .message {
+    height: 220px;
+    background-color: transparent;
+    border-radius: 15px;
+    }
+    
+    .formBoton {
+        width: 90px;
+        padding: 5px;
+        font-family: 'inter', serif;
+        font-weight: 100;
+        font-size: 1.5em;
+        color: #F3E8D4;
+        border-radius: 8px; 
+    }
+
+    .footerContacto ul {    
+        position: relative;
+        bottom: 0px;
+        display: inline-flex;  
+        justify-content: center;
+        align-items: center; 
+        list-style: none;
+        width: 100%;
+        height: 60px;   
+        background-color: #3d3c3c84;
+        gap: 18px;
+    }
+
+    .formBoton:hover {
+        width: 90px;
+        padding: 5px;
+        font-family: 'inter', serif;
+        font-weight: 100;
+        font-size: 1.5em;
+        color: #F3E8D4;
+        background-color: #f3e8d425;
+        border-radius: 8px;
+    }
+
+    /*  -------------------------------- Fin CONTACTO Mobile First   ------------------------------------*/
+
+    /*  -------------------------------- CONTACTO Responsive Tablet  ------------------------------------*/
+
+    @media screen and (min-width:571px) and (max-width: 974px) {
+
+        .titlesGeneral {
+            font-size: 4.5em;
+        }
+
+        
+        .contenedorForm {
+        height: 58vh;
+    }
+    }
+        @media screen and (min-width:975px) and (max-width: 1800px) {
+
+        .formCampos {
+            font-size: 1.9em;
+        }
+
+        .formBoton:hover {
+            font-size: 1.9em;
+        }
+    }
+
+
+    /*----------------------------------      FOOTER General        -----------------------*/
+    
+    .footer ul {    
+        position: relative;
+        bottom: 0px;
+        display: inline-flex;  
+        justify-content: center;
+        align-items: center; 
+        list-style: none;
+        width: 100%;
+        height: 60px;   
+        background-color: #3d3c3c84;
+        gap: 18px;
+    }
